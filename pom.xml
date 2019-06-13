@@ -11,7 +11,7 @@
     <groupId>cn.zhaozhigang.TestSpringBoot</groupId>
     <artifactId>WaCaiServer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>MySpringBootTestProject</name>
+    <name>WaCaiServer</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
