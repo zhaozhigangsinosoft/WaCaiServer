@@ -73,6 +73,7 @@ public class WeixinServiceImpl implements WeixinService {
         
         HashMap<String,String> accountMap = new HashMap<>();
         accountMap.put("浦发银行(3337)", "XX浦发银行储蓄卡");
+        accountMap.put("浦发银行", "XX浦发银行储蓄卡");
         accountMap.put("招商银行(7038)", "XX招行信用卡");
         accountMap.put("中信银行(1794)", "中信银行储蓄卡");
         accountMap.put("零钱通", "xx微信");
