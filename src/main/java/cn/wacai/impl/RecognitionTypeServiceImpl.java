@@ -49,6 +49,16 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
                 this.recognitionCommodity(wacaiAccountVo);
                 //根据交易时间识别三餐类型
                 this.recognitionHour(wacaiAccountVo);
+                
+                //渤海卫生费单独写一个逻辑
+                if(wacaiAccountVo.getTradingParty().equals("袁雪鹏")) {
+                    wacaiAccountVo.setExpenditureCategories("报销");
+                    wacaiAccountVo.setExpenditureCategory("项目费用");
+                    wacaiAccountVo.setBusiness("中科软");
+                    wacaiAccountVo.setReimbursement("可报销");
+                    wacaiAccountVo.setProject("公司");
+                    wacaiAccountVo.setRemarks("渤海卫生费");
+                }
             }
         }
     }
