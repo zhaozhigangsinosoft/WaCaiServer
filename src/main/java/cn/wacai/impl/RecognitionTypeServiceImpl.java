@@ -289,6 +289,15 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("好时代水饺一店", wacaiAccountVoType2);
         tradingPartyMap.put("静海县大邱庄镇黄山路世纪华联超市加盟店", wacaiAccountVoType2);
         tradingPartyMap.put("真功夫(北京南站精选店)", wacaiAccountVoType2);
+        tradingPartyMap.put("优品水饺", wacaiAccountVoType2);
+        tradingPartyMap.put("晋乡食府", wacaiAccountVoType2);
+        tradingPartyMap.put("谷楼烧饼中华南大街店", wacaiAccountVoType2);
+        tradingPartyMap.put("安心黄焖鸡", wacaiAccountVoType2);
+        tradingPartyMap.put("北京澳西物业管理有限公司亦庄分公司", wacaiAccountVoType2);
+        tradingPartyMap.put("鲁红霞", wacaiAccountVoType2);
+        tradingPartyMap.put("*欣欣", wacaiAccountVoType2);
+        tradingPartyMap.put("胜伟", wacaiAccountVoType2);
+        tradingPartyMap.put("荷花", wacaiAccountVoType2);
         
         WacaiAccountVo wacaiAccountVoType3= new WacaiAccountVo();
         wacaiAccountVoType3.setExpenditureCategories("购物");
@@ -312,6 +321,8 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("铂涛", wacaiAccountVoType5);
         tradingPartyMap.put("速伯艾特（北京）国际酒店管理有限公司", wacaiAccountVoType5);
         tradingPartyMap.put("净月高新技术产业开发区和樾宾馆", wacaiAccountVoType5);
+        tradingPartyMap.put("锦江信息技术（广州）有限公司", wacaiAccountVoType5);
+        tradingPartyMap.put("铂涛信息技术（广州）有限公司", wacaiAccountVoType5);
         
         WacaiAccountVo wacaiAccountVoType6= new WacaiAccountVo();
         wacaiAccountVoType6.setExpenditureCategories("餐饮");
@@ -367,6 +378,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("康之旅便利店", wacaiAccountVoType7);
         tradingPartyMap.put("北京丽秀千美商贸有限公司", wacaiAccountVoType7);
         tradingPartyMap.put("乐佳烟酒超市", wacaiAccountVoType7);
+        tradingPartyMap.put("轩蕊烟酒", wacaiAccountVoType7);
         
         WacaiAccountVo wacaiAccountVoType8= new WacaiAccountVo();
         wacaiAccountVoType8.setExpenditureCategories("餐饮");
