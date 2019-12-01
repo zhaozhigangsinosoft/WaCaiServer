@@ -289,6 +289,9 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("好时代水饺一店", wacaiAccountVoType2);
         tradingPartyMap.put("静海县大邱庄镇黄山路世纪华联超市加盟店", wacaiAccountVoType2);
         tradingPartyMap.put("真功夫(北京南站精选店)", wacaiAccountVoType2);
+        tradingPartyMap.put("北京澳西物业管理有限公司亦庄分公司", wacaiAccountVoType2);
+        tradingPartyMap.put("西门串吧（大慧寺店）", wacaiAccountVoType2);
+        tradingPartyMap.put("才门老狼大盘鸡", wacaiAccountVoType2);
         
         WacaiAccountVo wacaiAccountVoType3= new WacaiAccountVo();
         wacaiAccountVoType3.setExpenditureCategories("购物");
@@ -355,6 +358,8 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("大刀凉皮彩丽园店健哥", wacaiAccountVoType6);
         tradingPartyMap.put("军", wacaiAccountVoType6);
         tradingPartyMap.put("梦里阑珊", wacaiAccountVoType6);
+        tradingPartyMap.put("啊！佳佳?", wacaiAccountVoType6);
+        tradingPartyMap.put("王艳艳", wacaiAccountVoType6);
 
         WacaiAccountVo wacaiAccountVoType7= new WacaiAccountVo();
         wacaiAccountVoType7.setExpenditureCategories("餐饮");
@@ -379,6 +384,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("xuan妈友联超市孙付灵", wacaiAccountVoType8);
         tradingPartyMap.put("苏顺成纯绿豆饼(中华南大街店)", wacaiAccountVoType8);
         tradingPartyMap.put("沃尔玛大卖场(天津新开路分店)", wacaiAccountVoType8);
+        tradingPartyMap.put("北京便利蜂连锁商业有限公司", wacaiAccountVoType8);
         
         WacaiAccountVo wacaiAccountVoType9= new WacaiAccountVo();
         wacaiAccountVoType9.setExpenditureCategories("交通");
@@ -467,6 +473,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         wacaiAccountVoType22.setExpenditureCategories("交通");
         wacaiAccountVoType22.setExpenditureCategory("公交");
         tradingPartyMap.put("天津公交易通科技有限公司", wacaiAccountVoType22);
+        tradingPartyMap.put("城市一卡通（天津）城市卡有限公司", wacaiAccountVoType22);
         
         WacaiAccountVo wacaiAccountVoType23= new WacaiAccountVo();
         wacaiAccountVoType23.setExpenditureCategories("购物");
