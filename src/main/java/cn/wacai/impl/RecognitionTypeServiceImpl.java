@@ -405,6 +405,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("天津西青平价蔬菜店", wacaiAccountVoType6);
         tradingPartyMap.put("京东到家", wacaiAccountVoType6);
         tradingPartyMap.put("众品冷鲜肉", wacaiAccountVoType6);
+        tradingPartyMap.put("A董明峰13821950376", wacaiAccountVoType6);
 
 
         WacaiAccountVo wacaiAccountVoType7= new WacaiAccountVo();
