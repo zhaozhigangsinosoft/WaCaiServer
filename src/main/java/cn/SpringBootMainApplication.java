@@ -1,13 +1,11 @@
 package cn;
 
-import java.util.Properties;
-
-import org.mybatis.spring.annotation.MapperScan;
+import com.github.pagehelper.PageHelper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.github.pagehelper.PageHelper;
+import java.util.Properties;
 
 /**
  * 项目启动服务类
@@ -15,7 +13,6 @@ import com.github.pagehelper.PageHelper;
  *
  */
 @SpringBootApplication
-@MapperScan("cn.*.dao") 
 public class SpringBootMainApplication {
 
     public static void main(String[] args) {
