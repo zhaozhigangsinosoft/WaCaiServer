@@ -313,6 +313,9 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("*欣欣", wacaiAccountVoType2);
         tradingPartyMap.put("胜伟", wacaiAccountVoType2);
         tradingPartyMap.put("荷花", wacaiAccountVoType2);
+        tradingPartyMap.put("王凯风", wacaiAccountVoType2);
+        tradingPartyMap.put("西安老豆腐", wacaiAccountVoType2);
+        tradingPartyMap.put("吕贺美", wacaiAccountVoType2);
         
         WacaiAccountVo wacaiAccountVoType3= new WacaiAccountVo();
         wacaiAccountVoType3.setExpenditureCategories("购物");
@@ -406,6 +409,9 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("京东到家", wacaiAccountVoType6);
         tradingPartyMap.put("众品冷鲜肉", wacaiAccountVoType6);
         tradingPartyMap.put("A董明峰13821950376", wacaiAccountVoType6);
+        tradingPartyMap.put("王凯风", wacaiAccountVoType6);
+        tradingPartyMap.put("西安老豆腐", wacaiAccountVoType6);
+        tradingPartyMap.put("吕贺美", wacaiAccountVoType6);
 
 
         WacaiAccountVo wacaiAccountVoType7= new WacaiAccountVo();
