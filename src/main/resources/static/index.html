@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>导出页面</title>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <script type="text/javascript">
+        function submitForm(){
+            var fm = document.getElementById("fm");
+            fm.action = "/wacai/convert/";
+            var exportType = document.getElementsByName("exportType");
+            var type = "";
+            for(i=0;i<exportType.length;i++){
+                if(exportType[i].checked){
+                    type = exportType[i].value;
+                }
+            }
+            fm.action = fm.action+type;
+            fm.submit();
+        }
+    </script>
+</head>
+<body>
+    <form id = "fm" method = "post">
+        <input type = "radio" name = "exportType" checked value = "save"/>直接保存
+        <input type = "radio" name = "exportType" value = "download"/>下载自行保存
+        <input type = "button" value = "导出" onclick="submitForm()"/>
+    </form>
+</body>
+</html>

@@ -141,7 +141,7 @@ public class WaCaiServiceImpl implements WaCaiService {
             response.reset();  
             //设置response的Header  
             response.addHeader("Content-Disposition", "attachment;filename="+
-                    fileName);  
+                    fileName);
             OutputStream os = null;
             try {
                 os = new BufferedOutputStream(response.getOutputStream());
