@@ -22,7 +22,7 @@ public class SpringBootMainApplication {
         SpringApplication.run(SpringBootMainApplication.class, args);
     }
     
-    
+
     //配置mybatis的分页插件pageHelper
     @Bean
     public PageHelper pageHelper(){
