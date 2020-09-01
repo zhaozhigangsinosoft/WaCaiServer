@@ -27,7 +27,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
     private HashMap<String,WacaiAccountVo> tradingPartyMap = null;
     //定义根据商品名称转换类型的map
     private HashMap<String,WacaiAccountVo> commodityMap = null;
-    
+
     /**
      * 自动识别交易类型方法
      * @param accountVos
@@ -49,7 +49,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
                 this.recognitionCommodity(wacaiAccountVo);
                 //根据交易时间识别三餐类型
                 this.recognitionHour(wacaiAccountVo);
-                
+
                 //渤海卫生费单独写一个逻辑
                 if(wacaiAccountVo.getTradingParty().equals("袁雪鹏")) {
                     wacaiAccountVo.setExpenditureCategories("报销");
@@ -121,61 +121,61 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
             commodityMap.put("鱼", wacaiAccountVoType1);
             commodityMap.put("菜", wacaiAccountVoType1);
             commodityMap.put("美团", wacaiAccountVoType1);
-            
+
             WacaiAccountVo wacaiAccountVoType2= new WacaiAccountVo();
             wacaiAccountVoType2.setExpenditureCategories("娱乐");
             wacaiAccountVoType2.setExpenditureCategory("娱乐其他");
             commodityMap.put("摩摩哒", wacaiAccountVoType2);
-            
+
             WacaiAccountVo wacaiAccountVoType3= new WacaiAccountVo();
             wacaiAccountVoType3.setExpenditureCategories("交通");
             wacaiAccountVoType3.setExpenditureCategory("打车");
             commodityMap.put("滴滴", wacaiAccountVoType3);
-            
+
             WacaiAccountVo wacaiAccountVoType4= new WacaiAccountVo();
             wacaiAccountVoType4.setExpenditureCategories("交通");
             wacaiAccountVoType4.setExpenditureCategory("地铁");
             commodityMap.put("地铁", wacaiAccountVoType4);
-            
+
             WacaiAccountVo wacaiAccountVoType5= new WacaiAccountVo();
             wacaiAccountVoType5.setExpenditureCategories("餐饮");
             wacaiAccountVoType5.setExpenditureCategory("饮料水果");
             commodityMap.put("水果", wacaiAccountVoType5);
-            
+
             WacaiAccountVo wacaiAccountVoType6= new WacaiAccountVo();
             wacaiAccountVoType6.setExpenditureCategories("人情");
             wacaiAccountVoType6.setExpenditureCategory("物品");
             commodityMap.put("鲜花", wacaiAccountVoType6);
-            
+
             WacaiAccountVo wacaiAccountVoType7= new WacaiAccountVo();
             wacaiAccountVoType7.setExpenditureCategories("交通");
             wacaiAccountVoType7.setExpenditureCategory("自行车");
             commodityMap.put("哈啰", wacaiAccountVoType7);
             commodityMap.put("单车", wacaiAccountVoType7);
-            
+
             WacaiAccountVo wacaiAccountVoType8= new WacaiAccountVo();
             wacaiAccountVoType8.setExpenditureCategories("交通");
             wacaiAccountVoType8.setExpenditureCategory("火车");
             commodityMap.put("12306", wacaiAccountVoType8);
             commodityMap.put("火车票", wacaiAccountVoType8);
-            
+
             WacaiAccountVo wacaiAccountVoType9= new WacaiAccountVo();
             wacaiAccountVoType9.setExpenditureCategories("居家");
             wacaiAccountVoType9.setExpenditureCategory("电脑宽带");
             commodityMap.put("中国联通", wacaiAccountVoType9);
-            
+
             WacaiAccountVo wacaiAccountVoType10= new WacaiAccountVo();
             wacaiAccountVoType10.setExpenditureCategories("居家");
             wacaiAccountVoType10.setExpenditureCategory("快递邮政");
             commodityMap.put("顺丰", wacaiAccountVoType10);
             commodityMap.put("邮政", wacaiAccountVoType10);
-            
+
             WacaiAccountVo wacaiAccountVoType11= new WacaiAccountVo();
             wacaiAccountVoType11.setExpenditureCategories("居家");
             wacaiAccountVoType11.setExpenditureCategory("水电燃气");
             commodityMap.put("电费", wacaiAccountVoType11);
             commodityMap.put("天津津滨威立雅水业有限公司", wacaiAccountVoType11);
-            
+
             WacaiAccountVo wacaiAccountVoType12= new WacaiAccountVo();
             wacaiAccountVoType12.setExpenditureCategories("居家");
             wacaiAccountVoType12.setExpenditureCategory("材料建材");
@@ -183,7 +183,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         }
     }
 
-    
+
     /**
      * 根据交易对象识别交易类型
      * @param wacaiAccountVo
@@ -199,7 +199,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
             return;
         }
     }
-    
+
     /**
      * 根据交易对象转换类型的map
      */
@@ -209,10 +209,14 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         wacaiAccountVoType1.setExpenditureCategories("人情");
         wacaiAccountVoType1.setExpenditureCategory("亲密付");
         tradingPartyMap.put("杨瑞霞", wacaiAccountVoType1);
-        
+
         WacaiAccountVo wacaiAccountVoType2= new WacaiAccountVo();
         wacaiAccountVoType2.setExpenditureCategories("餐饮");
         wacaiAccountVoType2.setExpenditureCategory("三餐");
+        tradingPartyMap.put("晓蕊家凉皮酱货凉拌菜", wacaiAccountVoType2);
+        tradingPartyMap.put("天津家宴妈妈菜胜利路店", wacaiAccountVoType2);
+        tradingPartyMap.put("麦多馅饼", wacaiAccountVoType2);
+        tradingPartyMap.put("董记煎饼", wacaiAccountVoType2);
         tradingPartyMap.put("崔永霞", wacaiAccountVoType2);
         tradingPartyMap.put("肯德基", wacaiAccountVoType2);
         tradingPartyMap.put("福众源", wacaiAccountVoType2);
@@ -330,7 +334,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("王凯风", wacaiAccountVoType2);
         tradingPartyMap.put("西安老豆腐", wacaiAccountVoType2);
         tradingPartyMap.put("吕贺美", wacaiAccountVoType2);
-        
+
         WacaiAccountVo wacaiAccountVoType3= new WacaiAccountVo();
         wacaiAccountVoType3.setExpenditureCategories("购物");
         wacaiAccountVoType3.setExpenditureCategory("家居百货");
@@ -347,7 +351,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         wacaiAccountVoType4.setExpenditureCategory("美发美容");
         tradingPartyMap.put("李志杰", wacaiAccountVoType4);
         tradingPartyMap.put("大斌造型", wacaiAccountVoType4);
-        
+
         WacaiAccountVo wacaiAccountVoType5= new WacaiAccountVo();
         wacaiAccountVoType5.setExpenditureCategories("居家");
         wacaiAccountVoType5.setExpenditureCategory("住宿房租");
@@ -359,10 +363,16 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("铂涛信息技术（广州）有限公司", wacaiAccountVoType5);
         tradingPartyMap.put("去哪儿网", wacaiAccountVoType5);
         tradingPartyMap.put("携程Tripcom", wacaiAccountVoType5);
-        
+
         WacaiAccountVo wacaiAccountVoType6= new WacaiAccountVo();
         wacaiAccountVoType6.setExpenditureCategories("餐饮");
         wacaiAccountVoType6.setExpenditureCategory("买菜原料");
+        tradingPartyMap.put("姚宝环", wacaiAccountVoType6);
+        tradingPartyMap.put("川牧牛羊肉", wacaiAccountVoType6);
+        tradingPartyMap.put("陈伟", wacaiAccountVoType6);
+        tradingPartyMap.put("粮油店", wacaiAccountVoType6);
+        tradingPartyMap.put("雷雪", wacaiAccountVoType6);
+        tradingPartyMap.put("*来妮", wacaiAccountVoType6);
         tradingPartyMap.put("李记副食调料", wacaiAccountVoType6);
         tradingPartyMap.put("老左精品菜摊。", wacaiAccountVoType6);
         tradingPartyMap.put("鲁春芝", wacaiAccountVoType6);
@@ -453,7 +463,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
 
         tradingPartyMap.put("娟娟水果店", wacaiAccountVoType7);
         tradingPartyMap.put("王宝华", wacaiAccountVoType7);
-        
+
         WacaiAccountVo wacaiAccountVoType8= new WacaiAccountVo();
         wacaiAccountVoType8.setExpenditureCategories("餐饮");
         wacaiAccountVoType8.setExpenditureCategory("零食");
@@ -470,7 +480,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("老味果仁(西楼后街店)", wacaiAccountVoType8);
 
         tradingPartyMap.put("胖子精品干货", wacaiAccountVoType8);
-        
+
         WacaiAccountVo wacaiAccountVoType9= new WacaiAccountVo();
         wacaiAccountVoType9.setExpenditureCategories("交通");
         wacaiAccountVoType9.setExpenditureCategory("公交");
@@ -482,39 +492,39 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("菜鸟驿站", wacaiAccountVoType10);
         tradingPartyMap.put("顺丰快递～张刚", wacaiAccountVoType10);
         tradingPartyMap.put("丰巢科技", wacaiAccountVoType10);
-        
+
         WacaiAccountVo wacaiAccountVoType11= new WacaiAccountVo();
         wacaiAccountVoType11.setExpenditureCategories("交通");
         wacaiAccountVoType11.setExpenditureCategory("打车");
         tradingPartyMap.put("建亮", wacaiAccountVoType11);
         tradingPartyMap.put("滴滴出行", wacaiAccountVoType11);
         tradingPartyMap.put("嘀嗒出行", wacaiAccountVoType11);
-        
+
         WacaiAccountVo wacaiAccountVoType12= new WacaiAccountVo();
         wacaiAccountVoType12.setExpenditureCategories("居家");
         wacaiAccountVoType12.setExpenditureCategory("材料建材");
         tradingPartyMap.put("中州商贸", wacaiAccountVoType12);
-        
+
         WacaiAccountVo wacaiAccountVoType13= new WacaiAccountVo();
         wacaiAccountVoType13.setExpenditureCategories("购物");
         wacaiAccountVoType13.setExpenditureCategory("家具家纺");
         tradingPartyMap.put("绍兴理工学长", wacaiAccountVoType13);
         tradingPartyMap.put("okumura旗舰店", wacaiAccountVoType13);
-        
+
         WacaiAccountVo wacaiAccountVoType14= new WacaiAccountVo();
         wacaiAccountVoType14.setExpenditureCategories("医教");
         wacaiAccountVoType14.setExpenditureCategory("医疗药品");
         tradingPartyMap.put("天津河西荣皖中医医院", wacaiAccountVoType14);
         tradingPartyMap.put("深圳市海王星辰医药有限公司", wacaiAccountVoType14);
-        
+
         WacaiAccountVo wacaiAccountVoType15= new WacaiAccountVo();
         wacaiAccountVoType15.setExpenditureCategories("居家");
         wacaiAccountVoType15.setExpenditureCategory("家政服务");
         tradingPartyMap.put("五八到家平台", wacaiAccountVoType15);
         tradingPartyMap.put("五八到家保洁业务", wacaiAccountVoType15);
-        tradingPartyMap.put("老婆儿子我的最爱电话13682087515", 
+        tradingPartyMap.put("老婆儿子我的最爱电话13682087515",
                 wacaiAccountVoType15);
-        
+
         WacaiAccountVo wacaiAccountVoType16= new WacaiAccountVo();
         wacaiAccountVoType16.setExpenditureCategories("交通");
         wacaiAccountVoType16.setExpenditureCategory("地铁");
@@ -530,7 +540,7 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("平安财产保险", wacaiAccountVoType17);
         tradingPartyMap.put("蚂蚁会员(北京)网络技术服务有限公司", wacaiAccountVoType17);
         tradingPartyMap.put("蚂蚁会员（北京）网络技术服务有限公司", wacaiAccountVoType17);
-        
+
         WacaiAccountVo wacaiAccountVoType18= new WacaiAccountVo();
         wacaiAccountVoType18.setExpenditureCategories("购物");
         wacaiAccountVoType18.setExpenditureCategory("电子数码");
@@ -540,19 +550,19 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("色块数码配件专营店", wacaiAccountVoType18);
         tradingPartyMap.put("华为终端有限公司", wacaiAccountVoType18);
         tradingPartyMap.put("铁三角官方旗舰店", wacaiAccountVoType18);
-        
+
         WacaiAccountVo wacaiAccountVoType19= new WacaiAccountVo();
         wacaiAccountVoType19.setExpenditureCategories("居家");
         wacaiAccountVoType19.setExpenditureCategory("电脑宽带");
         tradingPartyMap.put("中国联通", wacaiAccountVoType19);
         tradingPartyMap.put("中国联合网络通信有限公司", wacaiAccountVoType19);
-        
+
         WacaiAccountVo wacaiAccountVoType20= new WacaiAccountVo();
         wacaiAccountVoType20.setExpenditureCategories("居家");
         wacaiAccountVoType20.setExpenditureCategory("水电燃气");
         tradingPartyMap.put("国网天津电力公司（智能表）-电费(自动缴费)", wacaiAccountVoType20);
         tradingPartyMap.put("水木清华1638", wacaiAccountVoType20);
-        
+
         WacaiAccountVo wacaiAccountVoType21= new WacaiAccountVo();
         wacaiAccountVoType21.setExpenditureCategories("购物");
         wacaiAccountVoType21.setExpenditureCategory("宠物用品");
@@ -561,45 +571,45 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         tradingPartyMap.put("猫森林旗舰店", wacaiAccountVoType21);
         tradingPartyMap.put("光合宠物医院", wacaiAccountVoType21);
         tradingPartyMap.put("益启玩家居专营店", wacaiAccountVoType21);
-        
+
         WacaiAccountVo wacaiAccountVoType22= new WacaiAccountVo();
         wacaiAccountVoType22.setExpenditureCategories("交通");
         wacaiAccountVoType22.setExpenditureCategory("公交");
         tradingPartyMap.put("天津公交易通科技有限公司", wacaiAccountVoType22);
         tradingPartyMap.put("城市一卡通（天津）城市卡有限公司", wacaiAccountVoType22);
-        
+
         WacaiAccountVo wacaiAccountVoType23= new WacaiAccountVo();
         wacaiAccountVoType23.setExpenditureCategories("购物");
         wacaiAccountVoType23.setExpenditureCategory("购物其他");
         tradingPartyMap.put("家友便利超市", wacaiAccountVoType23);
-        
+
         WacaiAccountVo wacaiAccountVoType24= new WacaiAccountVo();
         wacaiAccountVoType24.setExpenditureCategories("交通");
         wacaiAccountVoType24.setExpenditureCategory("火车");
         tradingPartyMap.put("上海蒜芽信息科技有限公司", wacaiAccountVoType24);
-        
+
         WacaiAccountVo wacaiAccountVoType25= new WacaiAccountVo();
         wacaiAccountVoType25.setExpenditureCategories("交通");
         wacaiAccountVoType25.setExpenditureCategory("自行车");
         tradingPartyMap.put("温希亭", wacaiAccountVoType25);
         tradingPartyMap.put("北京摩拜科技有限公司", wacaiAccountVoType25);
-        
+
         WacaiAccountVo wacaiAccountVoType26= new WacaiAccountVo();
         wacaiAccountVoType26.setExpenditureCategories("娱乐");
         wacaiAccountVoType26.setExpenditureCategory("旅游度假");
         tradingPartyMap.put("携程", wacaiAccountVoType26);
         tradingPartyMap.put("智行", wacaiAccountVoType26);
-        
+
         WacaiAccountVo wacaiAccountVoType27= new WacaiAccountVo();
         wacaiAccountVoType27.setExpenditureCategories("购物");
         wacaiAccountVoType27.setExpenditureCategory("摄影文印");
         tradingPartyMap.put("复印店", wacaiAccountVoType27);
-        
+
         WacaiAccountVo wacaiAccountVoType28= new WacaiAccountVo();
         wacaiAccountVoType28.setExpenditureCategories("居家");
         wacaiAccountVoType28.setExpenditureCategory("生活其他");
         tradingPartyMap.put("天津市出入境管理局", wacaiAccountVoType28);
-        
+
         WacaiAccountVo wacaiAccountVoType29= new WacaiAccountVo();
         wacaiAccountVoType29.setExpenditureCategories("购物");
         wacaiAccountVoType29.setExpenditureCategory("报刊书籍");
@@ -609,5 +619,11 @@ public class RecognitionTypeServiceImpl implements RecognitionTypeService {
         wacaiAccountVoType30.setExpenditureCategories("购物");
         wacaiAccountVoType30.setExpenditureCategory("服饰鞋帽");
         tradingPartyMap.put("恒源祥旗舰店", wacaiAccountVoType30);
+
+        WacaiAccountVo wacaiAccountVoType31= new WacaiAccountVo();
+        wacaiAccountVoType30.setExpenditureCategories("居家");
+        wacaiAccountVoType30.setExpenditureCategory("物业");
+        tradingPartyMap.put("彩丽园水站", wacaiAccountVoType31);
+
     }
 }
